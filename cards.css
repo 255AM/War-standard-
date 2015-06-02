@@ -13,11 +13,37 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
   overflow:hidden;   
 }
 
+.label{
+    margin-top: 15em;
+  margin-left: 37em;  
+    
+}
+ 
+ 
   .controls {
-      margin-top: 30em;
-  
+  margin-top: 15em;
+  height: 2em;
+  margin-left:;
+  background-color: darkgreen;
   }
 
+input[type="button"] 
+{ 
+    color:#050; 
+    font: bold 84% 'trebuchet ms',helvetica,sans-serif; 
+    background-color:lavenderblush; 
+    border:1px, 3px, 3px, 1px, solid; 
+    border-color: #999 #111 #111 #999; 
+    margin-left:;
+    height: 100%;
+    width: 6em;
+    
+} 
+
+
+input#shuffle {
+    margin-left: 40.4%;
+}
     .card {
   background-image: url("graphics/cardback.gif");
   border-color: #808080 #000000 #000000 #808080;

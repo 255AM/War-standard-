@@ -61,8 +61,8 @@ function deal(){
         myHand.push(myDealt);
         var compDealt = cards.shift();
         computerHand.push(compDealt);
-        document.getElementById('pstack').innerHTML = '<div class="card" style="left:24em;top:2em;"></div>';
-        document.getElementById('cstack').innerHTML = '<div class="card" style="left:24em;top:12em;"></div>';            
+        document.getElementById('pstack').innerHTML = '<div class="card" style="left:34em;top:2em;"></div>';
+        document.getElementById('cstack').innerHTML = '<div class="card" style="left:34em;top:12em;"></div>';            
     }
 }
 
@@ -73,19 +73,19 @@ screen.
 
 //players dealt cards, p1, p2, p3, p4, p5
 
-var p0 = '<div class="card" style="left:2em;top:12em;">'
-var p1 = '<div class="card" style="left:6em;top:12em;">'
-var p2 = '<div class="card" style="left:10em;top:12em;">'   
-var p3 = '<div class="card" style="left:14em;top:12em;">'
-var p4 = '<div class="card" style="left:18em;top:12em;">'
+var p0 = '<div class="card" style="left:13.5em;top:12em;">'
+var p1 = '<div class="card" style="left:17.5em;top:12em;">'
+var p2 = '<div class="card" style="left:21.5em;top:12em;">'   
+var p3 = '<div class="card" style="left:25.5em;top:12em;">'
+var p4 = '<div class="card" style="left:29.5em;top:12em;">'
 
 //computers flipped cards, c1, c2, c3, c4, c5
 
-var c0 = '<div class="card" style="left:2em;top:2em;">'
-var c1 = '<div class="card" style="left:6em;top:2em;">'
-var c2 = '<div class="card" style="left:10em;top:2em;">'   
-var c3 = '<div class="card" style="left:14em;top:2em;">'
-var c4 = '<div class="card" style="left:18em;top:2em;">'
+var c0 = '<div class="card" style="left:13.5em;top:2em;">'
+var c1 = '<div class="card" style="left:17.5em;top:2em;">'
+var c2 = '<div class="card" style="left:21.5em;top:2em;">'   
+var c3 = '<div class="card" style="left:25.5em;top:2em;">'
+var c4 = '<div class="card" style="left:29.5em;top:2em;">'
 
 /****************************************************************************
 assigning variables required for card turning and gameplay
