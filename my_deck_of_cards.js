@@ -114,9 +114,18 @@ flipping cards, 1 from computer, 1 from player. If cards flipped have same value
  
 function flipCards(){ 
     
+    if (myHand<1){
+    console.log('shuffled my hand');
+    myHand.push.apply(myHand, myCapturedCards);
+    myCapturedCards.length=0;
     
-    
-    
+}
+    if (computerHand<1){
+    console.log('shuffled comp hand');
+    myHand.push.apply(computerHand, compCapturedCards);
+    compCapturedCards.length=0;
+    }
+      
     console.log('myHand');
     console.log( myHand.length);
     console.log('my cap cards');
@@ -128,6 +137,7 @@ function flipCards(){
                 
     //myTurnedCars is the top card of myHand
     myTurnedCards = myHand.pop();
+        
     // value of that card
     myCardValue = myTurnedCards.value;
     
@@ -180,9 +190,10 @@ if  ( myTurnedCards.value > compTurnedCards.value ) {
             
         }
     }
+    
+    
 }
 
-    
 function warPlay(){
       
         myTurnedCards = myHand.pop();
@@ -193,6 +204,18 @@ function warPlay(){
         document.getElementById('c1').innerHTML = c1 + compTurnedCards.html;
         battleCards.push(myTurnedCards);
         battleCards.push(compTurnedCards);
+    
+        if (myHand<1){
+        //console.log('shuffled my hand');
+        myHand.push.apply(myHand, myCapturedCards);
+        myCapturedCards.length=0;
+        }
+        
+        if (computerHand<1){
+        console.log('shuffled comp hand');
+        myHand.push.apply(computerHand, compCapturedCards);
+        compCapturedCards.length=0;
+        }
                 
         myTurnedCards = myHand.pop();
         compTurnedCards = computerHand.pop();
@@ -202,6 +225,18 @@ function warPlay(){
         document.getElementById('c2').innerHTML = c2 + compTurnedCards.html;
         battleCards.push(myTurnedCards);
         battleCards.push(compTurnedCards);
+    
+        if (myHand<1){
+        //console.log('shuffled my hand');
+        myHand.push.apply(myHand, myCapturedCards);
+        myCapturedCards.length=0;
+        }
+        
+        if (computerHand<1){
+        console.log('shuffled comp hand');
+        myHand.push.apply(computerHand, compCapturedCards);
+        compCapturedCards.length=0;
+        }
                 
         myTurnedCards = myHand.pop();
         compTurnedCards = computerHand.pop();
@@ -211,6 +246,18 @@ function warPlay(){
         document.getElementById('c3').innerHTML = c3 + compTurnedCards.html;
         battleCards.push(myTurnedCards);
         battleCards.push(compTurnedCards);
+    
+        if (myHand<1){
+        //console.log('shuffled my hand');
+        myHand.push.apply(myHand, myCapturedCards);
+        myCapturedCards.length=0;
+        }
+        
+        if (computerHand<1){
+        console.log('shuffled comp hand');
+        myHand.push.apply(computerHand, compCapturedCards);
+        compCapturedCards.length=0;
+        }
         
         myTurnedCards = myHand.pop();
         compTurnedCards = computerHand.pop();
@@ -220,6 +267,18 @@ function warPlay(){
         document.getElementById('c4').innerHTML = c4 + compTurnedCards.html;
         battleCards.push(myTurnedCards);
         battleCards.push(compTurnedCards);
+    
+        if (myHand<1){
+        //console.log('shuffled my hand');
+        myHand.push.apply(myHand, myCapturedCards);
+        myCapturedCards.length=0;
+        }
+        
+        if (computerHand<1){
+        console.log('shuffled comp hand');
+        myHand.push.apply(computerHand, compCapturedCards);
+        compCapturedCards.length=0;
+        }
         
                 if  ( myTurnedCards.value > compTurnedCards.value ) {
         
